@@ -9,7 +9,7 @@ public class PdpSubsystem extends SubsystemBase{
   private final PowerDistribution m_pdp = new PowerDistribution();
   /** temperature du pdp en celsius */
   public Command readPDTemp() {
-    return runOnce(
+    return run(
       () -> {
         double pdTempC = m_pdp.getTemperature();
         System.out.println(pdTempC + " Celsius");
@@ -18,7 +18,7 @@ public class PdpSubsystem extends SubsystemBase{
   }
   /** "total current" (aucune idee ca veut dire quoi) */
   public Command readPDTotalC() {
-    return runOnce(  () -> {
+    return run(  () -> {
         double pdTotalC = m_pdp.getTotalCurrent();
         System.out.println(pdTotalC + " Total current");
       }
@@ -26,7 +26,7 @@ public class PdpSubsystem extends SubsystemBase{
   }
   /** total power (???) */
   public Command readPDTotalP() {
-    return runOnce(  () -> {
+    return run(  () -> {
         double pdTotalP = m_pdp.getTotalPower();
         System.out.println(pdTotalP + " Total power");
       }
@@ -34,7 +34,7 @@ public class PdpSubsystem extends SubsystemBase{
   }
   /** total energy (huh??) */
   public Command readPDTotalE() {
-    return runOnce(  () -> {
+    return run(  () -> {
         double pdTotalE = m_pdp.getTotalEnergy();
         System.out.println(pdTotalE + " Total energy");
       }
