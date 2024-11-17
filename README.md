@@ -14,7 +14,7 @@ Ce code contient :
   		
   	-Code qui détecte si le limit switch est appuyé (à tester)
   	
-  	-Mode auto pour le servo (
+  	-Mode auto pour le servo (à tester)
 
 
 À venir :
