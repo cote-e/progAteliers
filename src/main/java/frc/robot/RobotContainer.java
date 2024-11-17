@@ -1,6 +1,7 @@
 package frc.robot;
 
 import frc.robot.Constants.OperatorConstants;
+import frc.robot.Constants.ServoPositions;
 import frc.robot.commands.Autos;
 import frc.robot.subsystems.ExampleSubsystem;
 import frc.robot.subsystems.PdpSubsystem;
@@ -28,13 +29,15 @@ public class RobotContainer {
     m_driverController.b().onTrue(m_pdp.readPDTotalP());
     m_driverController.a().onTrue(m_pdp.readPDTotalE());
     //Commandes servo (hold)
-    m_driverController.rightBumper().onTrue(m_servoSubsystem.setServoAngle(180.0));
-    m_driverController.rightBumper().onFalse(m_servoSubsystem.setServoAngle(0.0));
+    m_driverController.rightBumper().onTrue(m_servoSubsystem.setServoAngle(ServoPositions.kServoPos4));
+    m_driverController.rightBumper().onFalse(m_servoSubsystem.setServoAngle(ServoPositions.kServoPos0));
+    m_driverController.leftBumper().onTrue(m_servoSubsystem.setServoAngle(ServoPositions.kServoPos6));
+    m_driverController.leftBumper().onFalse(m_servoSubsystem.setServoAngle(ServoPositions.kServoPos5));
     //Commandes servo (positions)
-    m_driverController.povLeft().onTrue(m_servoSubsystem.setServoAngle(0.0));
-    m_driverController.povUp().onTrue(m_servoSubsystem.setServoAngle(45.0));
-    m_driverController.povRight().onTrue(m_servoSubsystem.setServoAngle(90.0));
-    m_driverController.povDown().onTrue(m_servoSubsystem.setServoAngle(135.0));
+    m_driverController.povLeft().onTrue(m_servoSubsystem.setServoAngle(ServoPositions.kServoPos0));
+    m_driverController.povUp().onTrue(m_servoSubsystem.setServoAngle(ServoPositions.kServoPos1));
+    m_driverController.povRight().onTrue(m_servoSubsystem.setServoAngle(ServoPositions.kServoPos2));
+    m_driverController.povDown().onTrue(m_servoSubsystem.setServoAngle(ServoPositions.kServoPos3));
   }
 
   /**

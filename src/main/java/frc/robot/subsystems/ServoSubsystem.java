@@ -9,10 +9,12 @@ public class ServoSubsystem extends SubsystemBase {
     /**Moteur servo*/
     private Servo exampleServo = new Servo(2);
     
-    public ServoSubsystem() {}
+    public ServoSubsystem() {
+        // initialisation
+        setServoAngle(0);
+    }
 
     /**Set l'angle du servo a un double entre 0-180*/
-    //si le code du servo marche pas c'est la faute du if/else
     public Command setServoAngle(double angle) {
       return runOnce(
             () -> {

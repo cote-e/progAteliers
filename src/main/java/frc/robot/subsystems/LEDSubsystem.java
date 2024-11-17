@@ -22,9 +22,10 @@ public class LEDSubsystem extends SubsystemBase{
         ledStrip.setLength(ledBuffer.getLength());
         ledStrip.setData(ledBuffer);
         ledStrip.start();
+        blue();
     }
 
-    /**rainbow yippee (doesn't fucking work)*/
+    /**rainbow yippee (doesn't work)*/
     private void rainbow() {
 
         for (var i =0; i < ledBuffer.getLength(); i++) {
@@ -36,7 +37,7 @@ public class LEDSubsystem extends SubsystemBase{
     }
 
     private void blue() {
-        for (var i = 0; i < ledBuffer.getLength(); i++) {            
+        for (var i = firstPos; i < ledBuffer.getLength(); i++) {            
             ledBuffer.setRGB(i, 0, 0, 255);
          }
 

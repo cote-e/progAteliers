@@ -16,4 +16,21 @@ public final class Constants {
   public static class OperatorConstants {
     public static final int kDriverControllerPort = 0;
   }
+    /**Constants for servo positions*/
+  public static class ServoPositions {
+    /**0°*/
+    public static final int kServoPos0 = 0;
+    /**45°*/
+    public static final int kServoPos1 = 45;
+    /**90°*/
+    public static final int kServoPos2 = 90;
+    /**135°*/
+    public static final int kServoPos3 = 135;
+    /**180°*/
+    public static final int kServoPos4 = 180;
+    /**80°*/
+    public static final int kServoPos5 = 80;
+    /**100°*/
+    public static final int kServoPos6 = 100;
+  }
 }
