@@ -9,13 +9,13 @@ Voici mon code des ateliers d'Hypérion !
 ### Ce code contient : 
 
 
-  -Bindings pour lire l'info du PDP (branche main marche, branche etienne/motors à tester)
+  -Bindings pour lire l'info du PDP (marche sur tout les branches
    	
-  -Bindings pour bouger le servo
+  -Bindings pour bouger le servo (à debug sur etienne/motors)
   		
-  -Code qui détecte si le limit switch est appuyé (à tester)
+  -Code qui détecte si le limit switch est appuyé -(à tester)- (à debug)
   	
-  -Mode auto pour le servo (à tester)
+  -Mode auto pour le servo -(à tester)- (à debug)
 
 
 ### À venir :
