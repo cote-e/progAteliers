@@ -9,7 +9,7 @@ Voici mon code des ateliers d'Hypérion !
 ### Ce code contient : 
 
 
-  -Bindings pour lire l'info du PDP (marche sur tout les branches
+  -Bindings pour lire l'info du PDP (marche sur tout les branches)
    	
   -Bindings pour bouger le servo (à debug sur etienne/motors)
   		
