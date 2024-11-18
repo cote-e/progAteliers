@@ -13,9 +13,9 @@ Voici mon code des ateliers d'Hypérion !
    	
   -Bindings pour bouger le servo (à debug sur etienne/motors)
   		
-  -Code qui détecte si le limit switch est appuyé -(à tester)- (à debug)
+  -Code qui détecte si le limit switch est appuyé  (à debug)
   	
-  -Mode auto pour le servo -(à tester)- (à debug)
+  -Mode auto pour le servo (à debug)
 
 
 ### À venir :
